@@ -1,27 +1,22 @@
 import React from 'react';
-import Signup from './components/Signup';
-import Login from './components/Login';
-import Logout from './components/Logout';
-import { useUser } from 'reactfire';
 import './App.css';
+import Landing from "./pages/Landing";
+
+import {
+  BrowserRouter as Router,
+  // Switch,
+  Route
+} from "react-router-dom";
 
 function App() {
-  const user = useUser();
   return (
-    <div className="App">
-      {
-        user &&
-        <Logout />
-      }
-      {
-        !user &&
-        <>
-          <Signup />
-          <Login />
-        </>
-      }
-    </div>
-  );
+    <Router>
+ <Route exact path={"/"}>
+        <Landing />
+        </Route>
+
+    </Router>
+  )
 }
 
 export default App;
