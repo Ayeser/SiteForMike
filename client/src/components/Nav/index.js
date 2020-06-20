@@ -6,8 +6,11 @@ function Nav(props) {
       <a className="navbar-brand" href="/">
         Mike's Site
       </a>
-      <a className="navbar-brand" >
+      <a className="navbar-brand" href="/">
         Landing Page
+      </a>
+      <a className="navbar-brand" href="/Search">
+        Search
       </a>
     </nav>
   );

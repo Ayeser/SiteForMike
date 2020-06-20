@@ -5,7 +5,6 @@ import Logout from '../components/Logout';
 import Nav from '../components/Nav/index';
 import { useUser } from 'reactfire';
 
-
 function Landing() {
     const user = useUser();
     return (
